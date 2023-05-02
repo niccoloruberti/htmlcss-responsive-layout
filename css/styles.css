@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: roboto, sans-serif;
+}
+
 /* layout styles */
 
 .container {
@@ -45,6 +49,10 @@
     flex-wrap: wrap;
 }
 
+.container.x-small {
+    max-width: 500px;
+}
+
 /* header */
 
 header {
@@ -55,34 +63,46 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
-}
-
-.left-logo, .right-menu {
-    height: 100%; /* da togliere */
-    width: 100px; /* da togliere */
-    background-color: yellow; /* da togliere */
 }
 
 .left-logo {
     margin-left: 20px;
+    color: white;
+    font-size: 40px;
+    padding: 20px 0;
 }
 
 .right-menu {
     margin-right: 20px;
-}
-
-.hamburger {
-    width: 100%; /* da togliere */
-    height: 100%; /* da togliere */
-    background-color: red; /* da togliere */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .extended-menu {
     display: none;
-    width: 100%; /* da togliere */
-    height: 100%; /* da togliere */
-    background-color: green; /* da togliere */
+    color: white;
+}
+
+.extended-menu ul {
+    list-style-type: none;
+    display: flex;
+    font-weight: lighter;
+    margin-right: 18px;
+}
+.extended-menu li {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.extended-menu a:hover {
+    text-decoration: underline;
+}
+
+.extended-menu button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 25px;
 }
 
 /* seconda sezione, strategic planning e app development */
@@ -101,6 +121,12 @@ header {
 
 #get-started {
     background-color: rgb(151, 146, 228);
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(51, 51, 51);
 }
 
 /* tablet view */
@@ -133,18 +159,14 @@ header {
         display: none;
     }
     .extended-menu {
-        display: block;
-    }
-    .container.small {
-         width: 75%;
-         max-width: 800px;
-    }
-    .container.x-small {
-        width: 50%;
-        max-width: 500px;
+        display: flex;
+        align-items: center;
     }
     #benefits-of-working-with-us .col-30 {
         width: calc(100% / 3 - 40px);
+    }
+    .container.small {
+        max-width: 800px;
     }
 }
 
