@@ -97,6 +97,12 @@ header {
     background-color: rgb(151, 146, 228);
 }
 
+/* sesta sezione, get started */
+
+#get-started {
+    background-color: rgb(151, 146, 228);
+}
+
 /* tablet view */
 
 @media screen and (min-width: 768px) {
@@ -132,6 +138,10 @@ header {
     .container.small {
          width: 75%;
          max-width: 800px;
+    }
+    .container.x-small {
+        width: 50%;
+        max-width: 500px;
     }
     #benefits-of-working-with-us .col-30 {
         width: calc(100% / 3 - 40px);
