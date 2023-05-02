@@ -108,6 +108,9 @@ header {
     .col-50 {
         width: calc(50% - 40px);
     }
+    #benefits-of-working-with-us .col-30 {
+        width: calc(100% / 2 - 40px);
+    }
 }
 
 /* desktop view */
@@ -125,6 +128,9 @@ header {
     .container.small {
          width: 75%;
          max-width: 800px;
+    }
+    #benefits-of-working-with-us .col-30 {
+        width: calc(100% / 3 - 40px);
     }
 }
 
