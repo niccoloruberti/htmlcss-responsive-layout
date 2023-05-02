@@ -18,16 +18,12 @@ body {
 
 .col-30 {
     width: calc(100% - 40px);
-    height: 300px; /* da togliere */
     margin: 10px 20px;
-    background-color: red;
 }
 
 .col-double-30 {
     width: calc(100% - 40px);
-    height: 300px; /* da togliere */
     margin: 10px 20px;
-    background-color: red;
 }
 
 .col-50 {
@@ -105,6 +101,63 @@ header {
     border-radius: 25px;
 }
 
+/* prima sezione, get a demo application */
+
+#get-a-demo-application .content {
+    margin: 30px 10px 0;
+    padding: 30px 20px 0;
+    background-color: rgb(181, 221, 255);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#get-a-demo-application h4 {
+    color: rgb(0, 132, 253);
+    font-size: 25px;
+    text-align: center;
+}
+
+#get-a-demo-application .description h4 {
+    text-align: left;
+}
+
+#get-a-demo-application p {
+    line-height: 1.5em;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#get-a-demo-application .description p {
+    text-align: left;
+}
+
+#get-a-demo-application button {
+    color: white;
+    background-color: rgb(0, 132, 253);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 50px;
+    letter-spacing: 0.3em;
+}
+
+#get-a-demo-application button i {
+    margin-right: 10px;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+#get-a-demo-application i {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#get-a-demo-application img {
+    width: 80%;
+    margin-top: 30px;
+}
+
 /* seconda sezione, strategic planning e app development */
 
 #strategicp-appdev {
@@ -146,6 +199,9 @@ footer {
     }
     #benefits-of-working-with-us .col-30 {
         width: calc(100% / 2 - 40px);
+    }
+    #get-a-demo-application .col-double-30 .content {
+        flex-direction: row;
     }
 }
 
