@@ -7,6 +7,7 @@
 /* layout styles */
 
 .container {
+    width: 90%;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -14,14 +15,21 @@
 .col-30 {
     width: calc(100% - 20px);
     height: 300px; /* da togliere */
-    margin: 10px;
+    margin: 10px 20px;
     background-color: red;
 }
 
 .col-double-30 {
     width: calc(100% - 20px);
     height: 300px; /* da togliere */
-    margin: 10px;
+    margin: 10px 20px;
+    background-color: red;
+}
+
+.col-50 {
+    width:calc(100% - 20px);
+    height: 300px;
+    margin: 10px 20px;
     background-color: red;
 }
 
@@ -50,11 +58,11 @@ header {
 }
 
 .left-logo {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .right-menu {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .hamburger {
@@ -72,6 +80,12 @@ header {
 
 /* prima sezione, get a demo application */
 
+/* seconda sezione, strategic planning e app development */
+
+#strategicp-appdev {
+    background-color: rgb(151, 146, 228);
+}
+
 /* tablet view */
 
 @media screen and (min-width: 768px) {
@@ -79,10 +93,13 @@ header {
         max-width: 768px;
     }
     .col-30 {
-        width: calc(100% / 3 - 20px);
+        width: calc(100% / 3 - 40px);
     }
     .col-double-30 {
-        width: calc(100% / 3 * 2 - 20px);
+        width: calc(100% / 3 * 2 - 40px);
+    }
+    .col-50 {
+        width: calc(50% - 40px);
     }
 }
 
@@ -97,6 +114,10 @@ header {
     }
     .extended-menu {
         display: block;
+    }
+    .container.small {
+         width: 75%;
+         max-width: 800px;
     }
 }
 
