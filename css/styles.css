@@ -13,21 +13,21 @@
 }
 
 .col-30 {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     height: 300px; /* da togliere */
     margin: 10px 20px;
     background-color: red;
 }
 
 .col-double-30 {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     height: 300px; /* da togliere */
     margin: 10px 20px;
     background-color: red;
 }
 
 .col-50 {
-    width:calc(100% - 20px);
+    width:calc(100% - 40px);
     height: 300px; /* da togliere */
     margin: 10px 20px;
     background-color: red;
@@ -85,11 +85,15 @@ header {
     background-color: green; /* da togliere */
 }
 
-/* prima sezione, get a demo application */
-
 /* seconda sezione, strategic planning e app development */
 
 #strategicp-appdev {
+    background-color: rgb(151, 146, 228);
+}
+
+/* quarta sezione, benefits of working with us */
+
+#benefits-of-working-with-us {
     background-color: rgb(151, 146, 228);
 }
 
@@ -106,7 +110,7 @@ header {
         width: calc(100% / 3 * 2 - 40px);
     }
     .col-50 {
-        width: calc(50% - 40px);
+        width: calc(100% / 2 - 40px);
     }
     #benefits-of-working-with-us .col-30 {
         width: calc(100% / 2 - 40px);
