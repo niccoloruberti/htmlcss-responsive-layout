@@ -28,9 +28,7 @@ body {
 
 .col-50 {
     width:calc(100% - 40px);
-    height: 300px; /* da togliere */
     margin: 10px 20px;
-    background-color: red;
 }
 
 .col-100 {
@@ -110,6 +108,7 @@ header {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #get-a-demo-application h4 {
@@ -154,7 +153,7 @@ header {
 }
 
 #get-a-demo-application img {
-    width: 80%;
+    width: 50%;
     margin-top: 30px;
 }
 
@@ -162,6 +161,63 @@ header {
 
 #strategicp-appdev {
     background-color: rgb(151, 146, 228);
+}
+
+#strategicp-appdev .planning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#strategicp-appdev .planning img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#strategicp-appdev .planning h3 {
+    font-size: 35px;
+    color: white;
+    margin: 50px 0;
+}
+
+#strategicp-appdev .planning p {
+    color: white;
+    line-height: 2em;
+}
+
+#strategicp-appdev .developement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    margin: 30px 0;
+}
+
+#strategicp-appdev .developement img {
+    width: 70%;
+}
+
+#strategicp-appdev .developement h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#strategicp-appdev .developement p {
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
+#strategicp-appdev .developement .arrow-down {
+    background-color: rgb(151, 146, 228);
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin: 20px 0;
 }
 
 /* quarta sezione, benefits of working with us */
@@ -202,6 +258,9 @@ footer {
     }
     #get-a-demo-application .col-double-30 .content {
         flex-direction: row;
+    }
+    #get-a-demo-application img {
+        align-self: flex-end;
     }
 }
 
